@@ -5,22 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:belyaeva_pr"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="400" Width="600">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition Height="60"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="24px"></RowDefinition>
+            <RowDefinition Height="24px"></RowDefinition>
+            <RowDefinition Height="24px"></RowDefinition>
+            <RowDefinition Height="24px"></RowDefinition>
+            <RowDefinition Height="48px"></RowDefinition>
+            <RowDefinition Height="48px"></RowDefinition>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" HorizontalAlignment="Center"  Width="176" FontSize="25px">Введите логин:</TextBlock>
-        <TextBox Grid.Row="1" HorizontalAlignment="Center" Width="240"/>
-        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Width="191" FontSize="25px">Введите пароль:</TextBlock>
-        <PasswordBox Grid.Row="3" HorizontalAlignment="Center" Width="240"/>
-        <Image Grid.Row="4" Grid.Column="0" Source="images/logo.png" Width="200"></Image>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите логин:</TextBlock>
+        <TextBox Grid.Row="1" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></TextBox>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите пароль:</TextBlock>
+        <PasswordBox Grid.Row="3" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></PasswordBox>
+        <Button Grid.Row="4" Grid.Column="0" FontSize="12" FontFamily="Comic Sans MS"  Padding="10px" Height="38px" Width="130px">Войти</Button>
+        <Image Grid.Row="5" Grid.Column="0" Source="images/logo.png" Width="150px" Margin="0,26,0,-26"/>
     </Grid>
 </Window>
