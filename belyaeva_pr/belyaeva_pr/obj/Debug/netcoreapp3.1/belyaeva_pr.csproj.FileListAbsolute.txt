@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.exe
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.deps.json
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.runtimeconfig.json
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.runtimeconfig.dev.json
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.dll
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\bin\Debug\netcoreapp3.1\belyaeva_pr.pdb
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.csprojAssemblyReference.cache
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr_MarkupCompile.cache
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr_MarkupCompile.lref
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.g.resources
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.AssemblyInfo.cs
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.dll
+C:\Users\User\Desktop\belyaeva_pr\belyaeva_pr\obj\Debug\netcoreapp3.1\belyaeva_pr.pdb

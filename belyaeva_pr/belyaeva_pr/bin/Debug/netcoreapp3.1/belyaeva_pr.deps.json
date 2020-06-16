@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "belyaeva_pr/1.0.0": {
+        "runtime": {
+          "belyaeva_pr.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "belyaeva_pr/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

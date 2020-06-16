@@ -1,0 +1,26 @@
+﻿<Window x:Class="belyaeva_pr.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:belyaeva_pr"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center"  Width="176" FontSize="25px">Введите логин:</TextBlock>
+        <TextBox Grid.Row="1" HorizontalAlignment="Center" Width="240"/>
+        <TextBlock Grid.Row="2" HorizontalAlignment="Center" Width="191" FontSize="25px">Введите пароль:</TextBlock>
+        <PasswordBox Grid.Row="3" HorizontalAlignment="Center" Width="240"/>
+        <Image Grid.Row="4" Grid.Column="0" Source="images/logo.png" Width="200"></Image>
+    </Grid>
+</Window>
