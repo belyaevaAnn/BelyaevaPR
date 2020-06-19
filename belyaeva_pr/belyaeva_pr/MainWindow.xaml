@@ -10,11 +10,12 @@
         <Style x:Key="textStyle">
             <Setter Property="ItemsControl.FontFamily" Value="Comic Sans MS"></Setter>
             <Setter Property="ItemsControl.FontSize" Value="12"></Setter>
+            <Setter Property="ItemsControl.Foreground" Value="#37474f"></Setter>
         </Style>
     </Window.Resources>
     
     <Grid>
-        <Grid x:Name="startScreen" Visibility="Hidden" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Grid x:Name="startScreen" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -23,67 +24,68 @@
                 <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="24px"></RowDefinition>
-                <RowDefinition Height="48px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="48px"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите логин:</TextBlock>
-            <TextBox Grid.Row="1" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></TextBox>
-            <TextBlock Grid.Row="2" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите пароль:</TextBlock>
-            <PasswordBox Grid.Row="3" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></PasswordBox>
-            <Button Grid.Row="4" Grid.Column="0" FontSize="12" FontFamily="Comic Sans MS"  Padding="10px" Height="38px" Width="130px">Войти</Button>
-            <Image Grid.Row="5" Grid.Column="0" Source="images/logo.png" Width="150px" Margin="0,26,0,-26"/>
-        </Grid>
-        <Grid>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите логин:</TextBlock>
+            <TextBox Grid.Row="2" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></TextBox>
+            <TextBlock Grid.Row="3" HorizontalAlignment="Center" Padding="10px" FontSize="12" FontFamily="Comic Sans MS" VerticalAlignment="Center" Foreground="#37474f">Введите пароль:</TextBlock>
+            <PasswordBox Grid.Row="4" FontSize="12" FontFamily="Comic Sans MS" Width="100px"></PasswordBox>
+            <Button Grid.Row="5" Grid.Column="0" FontSize="12" FontFamily="Comic Sans MS"  Padding="10px" Height="38px" Width="130px" Click="enterS">Войти</Button>
+            <Image Grid.Row="0" Grid.Column="0" Source="images/logo.png" Width="150px" />
+        </Grid >
+        <Grid x:Name="meneger" Visibility="Hidden">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
+                <RowDefinition Height="24px"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}" FontWeight="Bold">Информация</TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Исполенитель</TextBlock>
-            <TextBox Grid.Row="2" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="3" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Заголовок</TextBlock>
-            <TextBox Grid.Row="4" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="5" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Сложность</TextBlock>
-            <TextBox Grid.Row="6" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="7" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Статус</TextBlock>
-            <TextBox Grid.Row="8" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="9" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Характер работы</TextBlock>
-            <TextBox Grid.Row="10" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="11" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Время выполнения</TextBlock>
-            <TextBox Grid.Row="12" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}" FontWeight="Bold">Информация</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Исполенитель</TextBlock>
+            <TextBox Grid.Row="3" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Заголовок</TextBlock>
+            <TextBox Grid.Row="5" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="6" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Сложность</TextBlock>
+            <TextBox Grid.Row="7" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="8" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Статус</TextBlock>
+            <TextBox Grid.Row="9" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="10" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Характер работы</TextBlock>
+            <TextBox Grid.Row="11" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="12" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Время выполнения</TextBlock>
+            <TextBox Grid.Row="13" Grid.Column="0"></TextBox>
 
-            <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}" FontWeight="Bold">Коэффициенты</TextBlock>
-            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Анализ и проектирование</TextBlock>
-            <TextBox Grid.Row="2" Grid.Column="1"></TextBox>
-            <TextBlock Grid.Row="3" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Установка оборудования</TextBlock>
-            <TextBox Grid.Row="4" Grid.Column="1"></TextBox>
-            <TextBlock Grid.Row="5" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Техническое обслуживание и сопровождение</TextBlock>
-            <TextBox Grid.Row="6" Grid.Column="1"></TextBox>
-            <TextBlock Grid.Row="7" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Время</TextBlock>
-            <TextBox Grid.Row="8" Grid.Column="1"></TextBox>
-            <TextBlock Grid.Row="9" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Сложность</TextBlock>
-            <TextBox Grid.Row="10" Grid.Column="1"></TextBox>
-            <TextBlock Grid.Row="11" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">В денежный эквивалент</TextBlock>
-            <TextBox Grid.Row="12" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="1" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}" FontWeight="Bold">Коэффициенты</TextBlock>
+            <TextBlock Grid.Row="2" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Анализ и проектирование</TextBlock>
+            <TextBox Grid.Row="3" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="4" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Установка оборудования</TextBlock>
+            <TextBox Grid.Row="5" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="6" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Техническое обслуживание и сопровождение</TextBlock>
+            <TextBox Grid.Row="7" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="8" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Время</TextBlock>
+            <TextBox Grid.Row="9" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="10" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">Сложность</TextBlock>
+            <TextBox Grid.Row="11" Grid.Column="1"></TextBox>
+            <TextBlock Grid.Row="12" Grid.Column="1" HorizontalAlignment="center" Style="{StaticResource textStyle}">В денежный эквивалент</TextBlock>
+            <TextBox Grid.Row="13" Grid.Column="1"></TextBox>
 
-            <Image Grid.Column="0" Grid.Row="13" Source="images/logo.png"></Image>
-            <Button Grid.Column="1" Grid.Row="13" Style="{StaticResource textStyle}">Отправить</Button> 
+            <Image Grid.Column="0" Grid.Row="0" Source="images/logo.png" Grid.ColumnSpan="2"></Image>
+            <Button Grid.Column="1" Grid.Row="14" Style="{StaticResource textStyle}">Отправить</Button> 
             
         </Grid>
     </Grid>

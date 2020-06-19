@@ -24,5 +24,11 @@ namespace belyaeva_pr
         {
             InitializeComponent();
         }
+
+        private void enterS(object sender, RoutedEventArgs e)
+        {
+            startScreen.Visibility = Visibility.Hidden;
+            meneger.Visibility = Visibility.Visible;
+        }
     }
 }
