@@ -59,8 +59,8 @@
             <TextBlock Grid.Row="1" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}" FontWeight="Bold">Информация</TextBlock>
             <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Исполенитель</TextBlock>
             <TextBox Grid.Row="3" Grid.Column="0"></TextBox>
-            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Заголовок</TextBlock>
-            <TextBox Grid.Row="5" Grid.Column="0"></TextBox>
+            <TextBlock Grid.Row="4" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}" >Заголовок</TextBlock>
+            <TextBox Grid.Row="5" Grid.Column="0" x:Name="header"></TextBox>
             <TextBlock Grid.Row="6" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Сложность</TextBlock>
             <TextBox Grid.Row="7" Grid.Column="0"></TextBox>
             <TextBlock Grid.Row="8" Grid.Column="0" HorizontalAlignment="center" Style="{StaticResource textStyle}">Статус</TextBlock>

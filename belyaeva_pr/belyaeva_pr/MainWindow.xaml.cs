@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using belyaeva_pr.sqlConn;
+using MySql.Data.MySqlClient;
 
 namespace belyaeva_pr
 {
@@ -20,15 +22,27 @@ namespace belyaeva_pr
     /// </summary>
     public partial class MainWindow : Window
     {
+        MySqlConnection conn = DBUtils.GetDBConnection();
         public MainWindow()
         {
             InitializeComponent();
+            
         }
 
         private void enterS(object sender, RoutedEventArgs e)
         {
             startScreen.Visibility = Visibility.Hidden;
             meneger.Visibility = Visibility.Visible;
+            try
+            {
+                conn.Open();
+                header.Text = "Да";
+            }
+            catch (Exception exc)
+            {
+                header.Text = "нет";
+            }
         }
+        
     }
 }
