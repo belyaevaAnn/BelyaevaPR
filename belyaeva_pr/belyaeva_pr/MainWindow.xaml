@@ -15,7 +15,7 @@
     </Window.Resources>
     
     <Grid >
-        <Grid x:Name="startScreen" VerticalAlignment="Center" HorizontalAlignment="Center" >
+        <Grid x:Name="startScreen" VerticalAlignment="Center" HorizontalAlignment="Center">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
@@ -34,11 +34,44 @@
             <Button Grid.Row="5" Grid.Column="0" FontSize="12" FontFamily="Comic Sans MS"  Padding="10px" Height="38px" Width="130px" Click="enterS">Войти</Button>
             <Image Grid.Row="0" Grid.Column="0" Source="images/logo.png" Width="150px" />
         </Grid >
-        <Grid x:Name="meneger" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Hidden">
+        <Grid x:Name="meneger"  Visibility="Hidden">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="36px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Source="images/logo.png"></Image>
+            <Button x:Name="coef_button" Click="coef_button_Click" Margin="5" Grid.Column="1" Grid.Row="0">Коэффициенты</Button>
+            <Button x:Name="add_task" Margin="5" Grid.Column="2" Grid.Row="0" Click="add_task_Click">Добавить</Button>
+            <Button x:Name="update_task" Margin="5" Grid.Column="3" Grid.Row="0" Click="update_task_Click">Редактировать</Button>
+            <ComboBox x:Name="userFilter" Grid.Column="4" Margin="5"></ComboBox>
+            <Button x:Name="update_table_button" Margin="5" Grid.Column="5" Grid.Row="0" Click="update_table_button_Click">Обновить</Button>
+            <Button x:Name="delete_task" Margin="5" Grid.Column="6" Grid.Row="0" Click="delete_task_Click">Удалить</Button>
+            <DataGrid x:Name="task_table" Grid.Row="2" AutoGenerateColumns="False" Grid.ColumnSpan="7" SelectionChanged="task_table_SelectionChanged">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Исполнитель" Binding="{Binding Path=id_user}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Заголовок" Binding="{Binding Path=name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Сложность" Binding="{Binding Path=difficulty}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Статус" Binding="{Binding Path=status}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Характер" Binding="{Binding Path=natWork}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Время" Binding="{Binding Path=timeWork}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        <Grid x:Name="coefic" HorizontalAlignment="Center" VerticalAlignment="Center"  Visibility="Hidden">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="24px"></RowDefinition>
                 <RowDefinition Height="24px"></RowDefinition>
@@ -71,8 +104,9 @@
             <TextBox Grid.Row="13" Grid.Column="0" x:Name ="money_C"></TextBox>
 
             <Image Grid.Column="0" Grid.Row="0" Source="images/logo.png" Grid.ColumnSpan="2"></Image>
-            <Button Grid.Column="0" Grid.Row="14" Style="{StaticResource textStyle}" Click="send_coef">Отправить</Button> 
-            
+            <Button Grid.Column="0" Grid.Row="14" Style="{StaticResource textStyle}" Click="send_coef">Отправить</Button>
+            <Button x:Name="back" Click="back_button_Click" Grid.Column="0" Grid.Row="15">Назад</Button>
+
         </Grid>
     </Grid>
 </Window>
